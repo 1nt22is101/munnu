@@ -1,0 +1,319 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: aquamarine;
+}
+
+
+.heading{
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+    margin-top:200px;
+    font-size: 100px;
+}
+
+.heading2{
+    color: rgb(0, 0, 0);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: bolder;
+    text-align: center;
+    margin:20px;
+    font-size: 50px;
+}
+
+.pic{
+    height: 500px;
+    width: 500px;
+    margin-left: 500px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+.play-button {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(26, 118, 128);
+    border-radius: 50%;
+    border:10px solid black;
+    margin-left: 760px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.play-button:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-left: 20px solid white;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+/* Hover Effect */
+.play-button:hover {
+    background-color: black;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+.balloon{
+    position: absolute;
+    width: 100px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: blue;
+    animation: move-up 5s;
+}
+
+.balloon::before{
+    position: absolute;
+    content: '';
+    width:1px;
+    height: 150px;
+    background-color: black;
+    top:110px;
+    left:50px;
+}
+
+.balloon::after{
+    position: absolute;
+    content: '';
+    border-bottom: 12px solid blue;
+    border-left:12px solid transparent;
+    border-right: 10px solid transparent;
+    top:109px;
+    left:41px;
+}
+
+.balloon:nth-child(10){
+    left:900px;
+    background-color: orange;
+    animation-duration:5s;
+}
+.balloon:nth-child(10)::after{
+    border-bottom: 12px solid orange;
+}
+
+.balloon:nth-child(5){
+    left:81px;
+    background-color:yellow;
+    animation-duration:3s;
+}
+.balloon:nth-child(5)::after{
+    border-bottom: 12px solid yellow;
+}
+.balloon:nth-child(4){
+    left:100px;
+    background-color:pink;
+    animation-duration:5s;
+}
+.balloon:nth-child(4)::after{
+    border-bottom: 12px solid pink;
+}
+
+.balloon:nth-child(5){
+    left:200px;
+    background-color:red;
+    animation-duration:3s;
+}
+.balloon:nth-child(5)::after{
+    border-bottom: 12px solid red;
+}
+
+.balloon:nth-child(6){
+    left:300px;
+    background-color:green;
+    animation-duration:5s;
+}
+.balloon:nth-child(6)::after{
+    border-bottom: 12px solid green;
+}
+
+.balloon:nth-child(7){
+    left:400px;
+    background-color:blueviolet;
+    animation-duration: 3s;
+}
+.balloon:nth-child(7)::after{
+    border-bottom: 12px solid blueviolet;
+}
+
+.balloon:nth-child(8){
+    left:500px;
+    background-color:cornflowerblue;
+    animation-duration:5s;
+}
+.balloon:nth-child(9)::after{
+    border-bottom: 12px solid cornflowerblue;
+}
+
+.balloon:nth-child(9){
+    left:600px;
+    background-color:peru;
+    animation-duration: 3s;
+}
+.balloon:nth-child(9)::after{
+    border-bottom: 12px solid peru;
+}
+/*.balloon:nth-child(11){
+    left:700px;
+    background-color:darkmagenta;
+    animation-duration: 3s;
+}
+.balloon:nth-child(11)::after{
+    border-bottom: 12px solid darkmagenta;
+}
+.balloon:nth-child(12){
+    left:800px;
+    background-color:brown;
+    animation-duration: 5s;
+}
+.balloon:nth-child(12)::after{
+    border-bottom: 12px solid brown;
+}*/
+
+.balloon:nth-child(13){
+    left:900px;
+    background-color:skyblue;
+    animation-duration: 3s;
+}
+.balloon:nth-child(13)::after{
+    border-bottom: 12px solid skyblue;
+}
+.balloon:nth-child(14){
+    left:1000px;
+    background-color:rgb(177, 63, 205);
+    animation-duration: 5s;
+}
+.balloon:nth-child(14)::after{
+    border-bottom: 12px solid peru;
+}
+.balloon:nth-child(15){
+    left:1100px;
+    background-color:darkkhaki;
+    animation-duration: 3s;
+}
+.balloon:nth-child(15)::after{
+    border-bottom: 12px solid darkkhaki;
+}
+.balloon:nth-child(16){
+    left:1200px;
+    background-color:white;
+    animation-duration: 5s;
+}
+.balloon:nth-child(16)::after{
+    border-bottom: 12px solid white;
+}
+
+.balloon:nth-child(17){
+    left:1300px;
+    background-color:gold;
+    animation-duration: 3s;
+}
+.balloon:nth-child(17)::after{
+    border-bottom: 12px solid gold;
+}
+.balloon:nth-child(18){
+    left:1400px;
+    background-color:lightcoral;
+    animation-duration: 5s;
+}
+.balloon:nth-child(18)::after{
+    border-bottom: 12px solid lightcoral;
+}
+@keyframes move-up{
+    0%{
+        top:69;
+    }
+    100%{
+        top:0%;
+    }
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 2.5rem;
+        margin-top: 100px;
+    }
+
+    .heading2 {
+        font-size: 1.5rem;
+    }
+
+    .pic {
+        width: 100%;
+        height: auto;
+    }
+
+    .play-button {
+        width: 80px;
+        height: 80px;
+    }
+
+    .play-button:before {
+        border-left: 15px solid white;
+        border-top: 9px solid transparent;
+        border-bottom: 9px solid transparent;
+    }
+
+    .balloon {
+        width: 40px;
+        height: 50px;
+    }
+}
+
+@media (max-width:768px){
+    .heading{
+        font-size: 40px;
+        margin-top: 200px;
+    }
+    .heading2{
+        font-size: 20px;
+    }
+
+    .pic {
+        width: 50%;
+        height: auto;
+        margin-left: 190px;
+        margin-bottom: 100px;
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .play-button {
+        width: 60px;
+        height: 60px;
+        margin-left:350px;
+        border: 3px solid black;
+    }
+
+    .play-button:before {
+        border-left: 15px solid white;
+        border-top: 9px solid transparent;
+        border-bottom: 9px solid transparent;
+    }
+
+    .balloon {
+        width: 30px;
+        height: 40px;
+        margin-left: 0px;
+    }
+    .balloon:nth-child(3){
+        margin-left: 0px;
+    }
+
+}

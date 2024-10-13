@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Birthday Card</title>
+
+</head>
+<body>
+<h1 class="heading" center>HAPPY BIRTHDAY MUNNU ☺</h1>
+<h2 class="heading2"center>May your birthday be as amazing as you are, full of love, happiness, and everything you’ve ever dreamed of."</h2>
+<img class ="pic" src="images/image.jpeg" alt="not found">
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+<div class="balloon"></div>
+
+    <!-- Play Button -->
+    <div class="play-button" id="playButton"></div>
+
+    <!-- Audio Element -->
+    <audio id="happyBirthdayAudio">
+        <source src="songs/happy-birthday.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Get the button and audio element
+        const playButton = document.getElementById('playButton');
+        const audio = document.getElementById('happyBirthdayAudio');
+
+        // Play the song when the button is clicked
+        playButton.addEventListener('click', () => {
+            // Check if the song is already playing
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        });
+    </script>
+
+
+
+</body>
+</html>
